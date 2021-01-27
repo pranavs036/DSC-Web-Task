@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffd5cd;
+}
+.navbar{
+    position: relative;
+    background-color: black;
+    padding: 2rem 0.5rem;
+}
+.nav-headers{
+    color: #ff7b54;
+    margin-left: 10px;
+    font-family: 'Yusei Magic', sans-serif;
+    text-decoration: none;
+}
+.nav-links{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    top: 2rem;
+}
+.nav-header{
+    margin-right: 17rem;
+    text-decoration: none;
+    color: azure;
+}
+.nav-link{
+  margin-right: 3rem;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.icon{
+    display: none;
+    visibility: hidden;
+    font-size: 0.000004rem;
+    color: aliceblue;
+}
+.about-me-active{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-top: 5rem;
+}
+.about-me-inactive{
+    display: none;
+}
+.my-skills-active{
+    display: initial;
+}
+.my-skills-inactive{
+    display: none;
+}
+.my-hobbies-active{
+    display: initial;
+}
+.my-hobbies-inactive{
+    display: none;
+}
+
+.self-image{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 15rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+
+.hobbies{
+
+}
+.hobby-list{
+    text-align: center;
+}
+.hobby-list ul{
+    list-style-type: none;
+    
+}
+.hobby-list ul li{
+    font-size: 1.7rem;
+}
+.skills{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.item-left{
+    text-align: end;
+    font-size: 2rem;
+}
+.item{
+    padding-left: 1rem;
+    
+    font-size: 1.5rem;
+}
+.nav-link:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+ .icon{
+     position: absolute;
+     visibility: visible;
+
+     top: 1.5rem;
+     right: 1rem;
+     font-size: 2rem;
+ }
+ .nav-links-active{
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+ .nav-link{
+     font-size: 1rem;
+     margin-top: 0.5rem;
+ }
+ .nav-links{
+     display: none;
+ }
+  }
+  @media only screen and (max-width: 500px) {
+    .self-image{
+        width: 100%;
+    }
+    .about-me{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+     }
